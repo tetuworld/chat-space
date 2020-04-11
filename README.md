@@ -23,6 +23,25 @@ Things you may want to cover:
 
 * ...
 
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+### Association
+- has_many :comments
+- has_many :groups
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|member|string||
+### Association
+- has_many :users
+- has_many :messages
+
 ## groups_usersテーブル
 
 |Column|Type|Options|
@@ -33,3 +52,14 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+## messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|body|text||
+|image|string||
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- belongs_to :group
