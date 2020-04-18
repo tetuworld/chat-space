@@ -1,0 +1,35 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left
+      %p.chat-info-name
+        test
+      %p.chat-info-subname
+        Member : masa
+    .chat-main__group-info__right
+      = link_to 'Edit', '#', class: "edit__btn"
+  .chat-main__message-list
+    .chat-main__message-list__name
+      %p.chat-massage-name
+        masa
+      %p.chat-massage-date
+        2020/04/18(Fri) 22:51:50
+    .chat-main__message-list__main
+      %p.chat-message-main
+        おはよう！
+    .chat-main__message-list__name
+      %p.chat-massage-name
+        masa
+      %p.chat-massage-date
+        2020/04/18(Fri) 22:51:50
+    .chat-main__message-list__main
+      %p.chat-message-main
+        おはよう！
+  .chat-main__message-form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
+
