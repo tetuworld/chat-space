@@ -5,9 +5,10 @@
         = @group.name
       %p.chat-info-subname
         Member :
-        = @group.user_ids
+        - @group.users.each do |user|
+          = user.name
     .chat-main__group-info__right
-      = link_to 'Edit', edit_group_path(current_user), class: "edit__btn"
+      = link_to 'Edit', "/groups/#{@group.id}/edit", class: "edit__btn"
 
   .chat-main__message-list
     = render @messages
