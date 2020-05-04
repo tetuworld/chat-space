@@ -54,7 +54,6 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.log("eikou")
       var html = buildHTML(data);
       $('.chat-main__message-lists').append(html);
       $('.chat-main__message-lists').animate({ scrollTop: $('.chat-main__message-lists')[0].scrollHeight});
