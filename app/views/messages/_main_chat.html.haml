@@ -13,26 +13,6 @@
   .chat-main__message-lists
     = render @messages
 
-
-    -# .chat-main__message-list__name
-    -#   %p.chat-massage-name
-    -#     masa
-    -#   %p.chat-massage-date
-    -#     2020/04/18(Fri) 22:51:50
-    -# .chat-main__message-list__main
-    -#   %p.chat-message-main
-    -#     おはよう！
-
-  -# .chat-main__message-form
-  -#   %form.new_message
-  -#     .input-box
-  -#       %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-  -#       %label{class: "input-box__image"}
-  -#         = icon('fas', 'image')
-  -#         %input{type: "file", class: "input-box__image__file"}
-  -#     %input{type: "submit", class: "submit-btn"}
-
-
   .chat-main__message-form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
