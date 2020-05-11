@@ -73,4 +73,3 @@ group :production do
 end
 
 
-gem 'fog-aws'
