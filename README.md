@@ -8,8 +8,6 @@ chat-space
 チャット送信の動画になります。
 https://i.gyazo.com/53821b1b955dbdc0996935ea3d69d329.mp4
 
-https://i.gyazo.com/53821b1b955dbdc0996935ea3d69d329.gif
-
 グループ作成の動画になります。
 https://i.gyazo.com/65ef63f6b8e3eb746c3967862ba7c40a.mp4
 
