@@ -1,10 +1,10 @@
 # アプリ名
 chat-space
 
-#概要
+# 概要
 チャットアプリケーションです。グループ別でチャットができます。
 
-#DEMO
+# DEMO
 https://gyazo.com/d7309640bb0e239f01063159749af7da
 
 https://i.gyazo.com/65ef63f6b8e3eb746c3967862ba7c40a.mp4
